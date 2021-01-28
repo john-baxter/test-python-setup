@@ -16,7 +16,12 @@ class CreatePhoneNumberTest(unittest.TestCase):
 
     self.assertEqual(actual_result, expected_result)
 
+  def test_input_is_example_phone_number(self):
+    n = [0,1,5,6,3,5,3,8,0,2]
+    expected_result = "(015) 635-3802"
+    actual_result = create_phone_number(n)
   
+    self.assertEqual(actual_result, expected_result)
 
 if __name__ == '__main__':
   unittest.main(verbosity = 2)
