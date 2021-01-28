@@ -1,5 +1,13 @@
 def create_phone_number(n):
-  if n[0] == 0:
-    return "(000) 000-0000"
-  else:
-    return "(111) 111-1111"
+  return "(%s%s%s) %s%s%s-%s%s%s%s" % (
+    n[0],
+    n[1],
+    n[2],
+    n[3],
+    n[4],
+    n[5],
+    n[6],
+    n[7],
+    n[8],
+    n[9],
+  )
